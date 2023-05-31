@@ -12,7 +12,7 @@ export const connectToDB = async () => {
 
   try {
     await mongoose.connect(process.env.MONGODB_URI, {
-      dbName: 'promptify',
+      dbName: 'promptora',
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
