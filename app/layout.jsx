@@ -6,12 +6,15 @@ import Provider from '@components/Provider';
 export const metadata = {
   title: 'Promptora',
   description: 'Discover & Share AI Prompts',
+  icons: {
+    icon: '/assets/images/logo.svg',
+  },
 };
 
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <div className="main">
           <div className="gradient" />
         </div>
